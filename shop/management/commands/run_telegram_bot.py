@@ -37,13 +37,6 @@ def price_handler(message):
     price = message.text
     bot.send_message(message.chat.id, f"Отлично!")
     new_bot = Product.objects.create(name=title, price=price)
-
-    
-
-
-#@bot.message_handler(func=lambda message: True)
-#def echo_all(message):
-    #bot.reply_to(message, message.text)
         
 
 
