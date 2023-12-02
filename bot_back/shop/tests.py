@@ -9,8 +9,8 @@ class TestPostModel(TestCase):
         self.assertEqual(post.title, 'Тестовый пост')
 
     def test_post_has_content(self):
-        post = Post.objects.create(title='Тестовый пост', content='Содержание тестового поста')
-        self.assertEqual(post.content, 'Содержание тестового поста')
+        post = Post.objects.create(title='Тестовый пост', content='Содержание  поста')
+        self.assertEqual(post.content, 'Содержание  поста')
 
     def test_post_str_method(self):
         post = Post.objects.create(title='Тестовый пост', content='Содержание тестового поста')
