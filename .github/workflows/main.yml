@@ -22,7 +22,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          cd root/backendbot/back_bot
+          cd root/backendbot/bot_back
           source ./venv/bin/activate
           git pull
           python manage.py migrate
